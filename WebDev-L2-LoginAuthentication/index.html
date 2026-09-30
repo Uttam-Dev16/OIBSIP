@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | OIBSIP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="auth-container">
+        <section class="auth-card">
+            <div class="auth-header">
+                <p class="eyebrow">OIBSIP • Level 2</p>
+                <h1>Welcome Back</h1>
+                <p>Login to access your dashboard.</p>
+            </div>
+
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="loginIdentifier">Username or Email</label>
+                    <input
+                        type="text"
+                        id="loginIdentifier"
+                        name="loginIdentifier"
+                        placeholder="Enter username or email"
+                        autocomplete="username"
+                        required
+                    >
+                    <small class="error-message" id="loginIdentifierError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        name="loginPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+                    <small class="error-message" id="loginPasswordError"></small>
+                </div>
+
+                <p class="form-message" id="loginMessage"></p>
+
+                <button type="submit" class="primary-btn">
+                    Login
+                </button>
+            </form>
+
+            <p class="switch-page">
+                Don't have an account?
+                <a href="register.html">Create an account</a>
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

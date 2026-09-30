@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | OIBSIP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="dashboard-container">
+        <section class="dashboard-card">
+            <div class="dashboard-header">
+                <p class="eyebrow">OIBSIP • Level 2</p>
+                <h1>Welcome to Your Dashboard</h1>
+                <p id="welcomeMessage">
+                    You have successfully logged in.
+                </p>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="info-box">
+                    <span class="info-label">Username</span>
+                    <strong id="dashboardUsername">User</strong>
+                </div>
+
+                <div class="info-box">
+                    <span class="info-label">Email</span>
+                    <strong id="dashboardEmail">user@example.com</strong>
+                </div>
+
+                <div class="info-box">
+                    <span class="info-label">Account Status</span>
+                    <strong>Authenticated</strong>
+                </div>
+            </div>
+
+            <button type="button" id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
